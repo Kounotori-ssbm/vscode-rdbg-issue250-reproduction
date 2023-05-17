@@ -1,0 +1,13 @@
+{
+  "name": "vscode-rdbg-issue250-reproduction",
+  "dockerComposeFile": "./docker-compose.yml",
+  "workspaceFolder": "/app",
+  "service": "rails",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "KoichiSasada.vscode-rdbg"
+      ]
+    }
+  }
+}
