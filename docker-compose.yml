@@ -10,4 +10,7 @@ services:
         APP_DIR: /app
     volumes:
       - .:/app:cached
+    ports:
+      - 3000:3000
+    command: /bin/sh -c "rm -f tmp/pids/server.pid && rdbg --nonstop --open --command -- rails server --binding=0.0.0.0"
     tty: true
